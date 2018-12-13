@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login_page">
+
+    <div class="header_gallery"></div>
+
+        <div class="keaLogo"></div>
+
+     <form action="home.html">
+<!--        <input type="submit" value="Uni Login" class="uni_login">-->
+
+        <input type="image" src="img/uni_login.svg" border="0" alt="submit" class="uni_login"/>
+
+
+        <input type="text" class="username" placeholder="Username" required>
+        <input type="password" class="password" placeholder="Password" required>
+        <p class="show"></p>
+        <a href="forgot_login.html" class="forgot">Forgot login?</a>
+        <input  type="submit" class="login" value="Login">
+</form>
+
+    </div>
+
+
+    <script>
+
+window.addEventListener("load", sidenVises);
+
+
+function sidenVises(){
+    startLogin();
+}
+
+function startLogin(){
+document.querySelector(".show").addEventListener("click", showPassword);
+    document.querySelector(".password").type = 'password';
+    document.querySelector(".show").innerHTML = "Show";
+}
+
+function showPassword(){
+   document.querySelector(".password").type = 'text';
+    document.querySelector(".show").removeEventListener("click", showPassword);
+    document.querySelector(".show").addEventListener("click", hidePassword);
+     document.querySelector(".show").innerHTML = "Hide";
+}
+
+function hidePassword(){
+      document.querySelector(".password").type = 'password';
+    document.querySelector(".show").removeEventListener("click", hidePassword);
+    document.querySelector(".show").addEventListener("click", showPassword);
+     document.querySelector(".show").innerHTML = "Show";
+}
+</script>
+</body>
+
+</html>

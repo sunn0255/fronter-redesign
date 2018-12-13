@@ -1,0 +1,1826 @@
+/*gennerelt*/
+
+* {
+    
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    margin-bottom: 5.33vw;
+}
+
+
+.header_chat {
+    background-color: black;
+    width: 100vw;
+    height: 22vw;
+}
+
+header {
+
+    background-color: black;
+    width: 72.95vx;
+    height: 20vw;
+    position: relative;
+
+
+}
+
+.kea_logo {
+
+    position: absolute;
+    background-size: 100%;
+    left: 19vw;
+    top: -7.5vw;
+    z-index: 3;
+
+}
+
+.profil {
+
+    position: absolute;
+    background-size: 100%;
+    left: -2vw;
+    top: 0vw;
+    z-index: 1;
+    height: 20vw;
+
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+.hide {
+    display: none; 
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    font-family: arial;
+    text-align: right;
+    margin: -3vw;
+
+
+}
+
+h2 {
+
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    font-family: arial;
+    text-align: right;
+    margin: -3vw;
+
+}
+
+.home {
+
+    color: white;
+    text-align: center;
+    font-family: arial;
+    text-align: left;
+
+}
+
+
+a {
+    text-decoration: none;
+    font-family: arial;
+    text-align: center;
+}
+
+/*chat*/
+
+.new_icon {
+    background-image: url(img/compose.svg);
+    background-repeat: no-repeat;
+    width: 7.6vw;
+    height: 7.6vw;
+    position: absolute;
+    top: 7.2vw;
+    right: 7.6vw;
+}
+
+.red_line {
+    background-image: url(img/line-17.svg);
+    position: absolute;
+    top: 15.3vw;
+    left: 43vw;
+    width: 13vw;
+    height: 0.2vw;
+}
+
+.new_message {
+    background: url(img/1-new-message.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 32vw;
+    top: 8.26vw;
+    width: 37vw;
+    height: 6.13vw;
+}
+
+.left-arrow {
+    background: url(img/left-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 7.8vw;
+    right: 90vw;
+    width: 3vw;
+    height: 6.3vw;
+}
+
+.messages {
+    position: absolute;
+    top: 25.6vw;
+    right: 64.5vw;
+    width: 15.7vw;
+    height: 4vw;
+    font-family: Arial;
+    font-size: 3.4vw;
+    color: #fffdfd;
+}
+
+.groups {
+    position: absolute;
+    top: 25.6vw;
+    right: 44vw;
+    width: 11vw;
+  height: 4vw;
+  font-family: Arial;
+  font-size: 3.4vw;
+  color: #707070;
+}
+
+.active_chat {
+    position: absolute;
+    top: 25.6vw;
+    right: 26vw;
+     width: 9vw;
+  height: 4vw;
+  font-family: Arial;
+  font-size: 3.4vw;
+  color: #707070;
+}
+
+.rectangle_red {
+    position: absolute;
+    top:24.8vw;
+    right: 61.8vw;
+    width: 20.8vw;
+  height: 6.1vw;
+  border-radius: 20px;
+  background-color: #ea5045;
+    z-index: -1;
+}
+
+.move {
+    top:24.8vw;
+    right: 39vw;
+    transition: right 0.4s;
+}
+
+.search_field {
+    position: absolute;
+    top: 35vw; 
+    right: 16.7vw;
+    width: 67.8vw;
+  height: 7vw;
+  border-radius: 10px;
+    border: none;
+  background-color: rgba(142, 142, 147, 0.24);
+}
+
+input[type=search] {
+    padding-left: 5.8vw;
+    padding-right: 2.6vw;
+}
+
+input[type=search]::placeholder {
+    font-size: 3.2vw;
+    position: absolute;
+    top:37.30vw;
+    left: 21.33vw;
+}
+
+input[type=search]:focus {
+    outline: -webkit-focus-ring-color auto 0;
+    border: 1px solid #EA5045;
+    transition: border 0.1s linear;
+    
+}
+
+.search_glyph {
+    background-image: url(img/search-glyph.svg);
+    background-repeat: no-repeat;
+    width: 2.6vw;
+    height: 2.6vw;
+    position: absolute;
+    top: 37.3vw;
+    right: 79.7vw; 
+    z-index: 3;
+}
+
+.box1, 
+.box2,
+.box3,
+.box4,
+.box5 {
+    background-color: white;
+    width: 100vw;
+    height: 18.6vw;
+    border-top: 1px solid black;
+    position: relative;
+}
+
+.navn {
+    position: absolute;
+    top: 2.9vw;
+    right: 40.8vw;
+    font-size: 5.3vw;
+    color: black;
+     font-family: Arial;
+}
+
+.box2 .navn {
+    right: 29vw;
+
+}
+
+.box3 .navn {
+    right: 38.4vw;
+
+    
+}
+
+.box4 .navn {
+    right: 46vw;
+
+    
+}
+
+.box5 .navn {
+    right: 53vw;
+    
+}
+
+.box2 .besked  {
+    opacity: 0.5;
+}
+.box3 .besked {
+    opacity: 0.5;
+}
+.box4 .besked {
+    opacity: 0.5;
+}
+.box5 .besked {
+    opacity: 0.5;
+}
+
+.besked   {
+    position: absolute;
+    top: 8.7vw;
+    left: 21.8vw;
+    font-family: Arial;
+    font-size: 3.4vw;
+    width: 66vw;
+    height: 8vw;
+}
+
+.profil_chat {
+    position: absolute;
+    width: 14.1vw;
+    height: 14.1vw;
+    left: 5.3vw;
+    top: 2.9vw;
+}
+
+.box5 {
+    border-bottom: 1px solid black; 
+}
+
+#message {
+    position: absolute;
+    top: 45.6vw;
+}
+
+
+footer {
+    background-color: rgba(0,0,0,0.08);
+    position: absolute;
+    bottom: 0vw;
+    width: 100vw;
+    height: 8vw;
+}
+
+footer p {
+    position: absolute;
+    left: 5vw;
+    top: 1.3vw;
+    width: 52vw;
+    height: 4.5vw;
+    color: rgba(103,103,103,0.37);
+}
+
+
+/*chat studerende*/
+
+.maria_andersen {
+    background: url(img/maria-andersen.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 32vw;
+    top: 8.26vw;
+    width: 37vw;
+    height: 6.13vw;
+}
+
+
+.type_a_message {
+    position: absolute;
+    bottom: 0;
+width: 84vw;
+height: 15vw;
+    padding-left: 14.6vw;
+
+}
+
+
+.type_a_message::placeholder {
+
+    font-size: 4vw;
+    font-family: arial;
+
+    
+}
+
+.emoji {
+    position: absolute;
+    width: 15.76vw;
+    height: 15.2vw;
+    bottom: 0;
+}
+
+.attachment {
+    position: absolute;
+    width: 4.64vw; 
+    height: 4.64vw;
+    bottom: 6vw;
+    right: 15.6vw;
+}
+
+.group_23 {
+    position: absolute;
+    width: 7.8vw; 
+    height: 7.8vw;
+    bottom: 3.9vw;
+    right: 4.4vw;
+}
+
+
+.profil_billede{
+    position: absolute;
+    width: 14vw;
+    height: 14vw;
+    top:32vw;
+    left: 3.4vw;
+}
+
+.besked_fra {
+    position: absolute;
+    width: 58.4VW;
+    height: 11.73vw;
+    top:29.86vw;
+    left: 20.26vw;
+}
+
+
+/*new chat*/
+.new_conversation {
+    position: absolute;
+    background-image: url(img/new-conversation.svg);
+    width: 42.4VW;
+    height: 5.86vw;
+    top: 8.26vw;
+    left: 28.79vw;
+}
+
+.to_chat {
+    position: absolute;
+    top:22.13vw;
+    width: 100vw;
+    height: 8.79vw;
+    border: none; 
+    border-bottom: 1px black solid;
+    padding-left:  10VW;
+}
+
+.to_chat::placeholder {
+    position: absolute;
+    top:25vw;
+    font-size: 5.33vw;
+}
+
+.plus {
+    position: absolute;
+    top: 24.13vw;
+    right: 8vw;
+    width: 4.72VW;
+    height: 4.72VW;
+}
+
+
+/*contacts*/
+
+.new_chat_top h2 {
+    position: absolute;
+width: 71.2VW;
+  height: 6.6vw;
+  font-family: arial;
+  font-size: 5.8vw;
+  font-weight: bold;
+  color: #4d4d4d;
+    top: 29.86vw;
+    left: 14.39vw;
+}
+
+.new_chat_top p {
+    position: absolute;
+width: 58.4VW;
+  height: 3.2VW;
+  font-family: arial;
+  font-size: 2.9vw;
+  font-weight: bold;
+  color: #4d4d4d;
+top: 36.26vw;
+    left: 18.93vw;
+}
+
+
+.alfa li:first-child {
+    position: absolute;
+    width: 6.93vw;
+  height: 10.93vw;
+  font-family: Arial;
+  font-size: 9.6VW;
+  font-weight: bold;
+  color: #4d4d4d;
+    top: 41.86vw;
+    left: 5.33vw;
+}
+
+.alfa .a {
+    position: absolute;
+    width: 89.60vw;
+  height: 72.53vw;
+    top: 54.93vw;
+    left: 6.13vw;
+}
+
+.alfa .b {
+    position: absolute;
+    width: 85.33vw;
+  height: 72.53vw;
+    top: 154.4VW;
+    left: 6.13vw;
+}
+
+.alfa .b1 {
+    position: absolute;
+    width: 6.93vw;
+  height: 10.93vw;
+  font-family: Arial;
+  font-size: 9.6VW;
+  font-weight: bold;
+  color: #4d4d4d;
+    top:141.33vw;
+    left: 5.33vw;
+    
+}
+
+
+/*chat_groups */
+
+
+.dark{
+    color: #707070;
+}
+
+.white {
+    color: white;
+}
+
+.gruppe {
+    position: absolute;
+    top: 2.9vw;
+    right: 56vw;
+    font-size: 5.3vw;
+    color: black;
+     font-family: Arial;
+}
+
+.box2 .gruppe {
+    right: 56vw;
+    opacity: 0.5;
+}
+
+.box3 .gruppe {
+    right: 56vw;
+    opacity: 0.5;
+    
+}
+
+.box4 .gruppe {
+    right: 53.33vw;
+    opacity: 0.5;
+    
+}
+
+.box5 .gruppe {
+    right: 56.26vw;
+    opacity: 0.5;
+    
+}
+
+.box2 .besked {
+    opacity: 0.5;
+}
+.box3 .besked {
+    opacity: 0.5;
+}
+.box4 .besked {
+    opacity: 0.5;
+}
+.box5 .besked {
+    opacity: 0.5;
+}
+
+
+
+
+/*login page*/
+
+.uni_login {
+    position: absolute;
+    top: 78vw;
+    right: 22vw;
+}
+
+
+.header_gallery {
+    background-image: url(img/login_billede.svg);
+    background-repeat: no-repeat;
+    background-size: 180%;
+    width: 100%;
+    height: 58.24vw;
+}
+
+.keaLogo {
+    background-image: url(img/keaLogo.svg);
+    width: 83.3vw;
+    height: 21.04vw;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 8.2vw;
+    top: 46.5vw;
+}
+
+
+.uni_login {
+    width: 55.2vw;
+    height: 14.9vw;
+    position: absolute;
+    left: 22.4vw;
+    top: 78.6vw;
+}
+
+.username {
+    position: absolute;
+    top: 101.6VW;
+    left: 12.5vw;
+    width: 71.2VW;
+    height: 14.9vw;
+    border: 1px solid rgb(206, 205, 205);
+    font-size: 5.3vw;
+    padding-left: 2.6vw;
+    text-decoration-color: rgb(178, 177, 177);
+}
+
+
+.password {
+    position: absolute;
+    top: 123.4vw;
+    left: 12.5vw;
+    width: 71.2VW;
+    height: 14.9vw;
+    border: 1px solid rgb(206, 205, 205);
+    font-size: 5.3vw;
+    padding-left: 2.6vw;
+}
+
+.show {
+    position: absolute;
+    top: 129vw;
+    left: 70vw;
+    font-family: arial;
+    color: #b2b1b1;
+}
+
+::placeholder {
+    color: rgb(178, 177, 177);
+}
+
+input:focus {
+    outline: -webkit-focus-ring-color auto 0;
+    border: 1px solid #EA5045;
+    transition: border 0.1s linear;
+}
+
+.forgot {
+    font-size: 5.3vw;
+    line-height: 5.8vw;
+    font-family: arial;
+    color: rgb(208, 207, 207);
+    text-decoration: none;
+    position: absolute;
+    top: 146vw;
+    left: 35vw;
+}
+
+
+.login {
+    position: absolute;
+    top: 159vw;
+    left: 9.8vw;
+    width: 80.2vw;
+    height: 11vw;
+    background: black;
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+    font-family: arial;
+    font-weight: lighter;
+    text-transform: uppercase;
+
+}
+
+
+/*forgot login*/
+.send_email_btn {
+    font-size: 5.33vw;
+    color: white;
+    background-color: black;
+    width: 80.26vw;
+    height: 11.20vw;
+    position: absolute;
+    top: 153.06vw;
+    left: 9.86vw;
+}
+
+
+.instructions p {
+    position: absolute;
+    width: 77.33vw;
+    height: 40.53vw;
+    top:103.73vw;
+    right: 11.20vw;
+    text-align: center;
+    font-size: 4vw;
+    font-family: arial;
+    color: #b2b1b1;
+}
+
+.send_email {
+    width: 71.2VW;
+    height: 14.93vw;
+    position: absolute;
+    top: 82.13vw;
+    left: 12.53vw;
+    border: 1px solid #cecdcd;
+    font-size: 5.33vw;
+    padding-left: 3.73vw;
+
+
+}
+
+.send_email::placeholder {
+    font-size: 5.33vw;
+
+}
+
+
+/* ------------------------ Menu bar ------------------------------ */
+
+.topnav {
+    overflow: visible;
+    background-color: black;
+    width: 50vw;
+    position: absolute;
+    left: 49.9vw;
+    z-index: 2;
+
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: black;
+    color: white;
+    margin-bottom: 13vw;
+    position: relative;
+}
+
+.topnav .icon {
+    margin-top: 4vw;
+    margin-right: 4vw;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+
+
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: absolute;
+
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        float: left;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 387px) {
+    .active {
+    margin-bottom: 12vw;
+
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .active {
+    margin-bottom: 11vw;
+
+    }
+
+    .kea_logo {
+
+    position: absolute;
+    background-size: 100%;
+    left: 14vw;
+    top: -10vw;
+    z-index: 3;
+
+}
+}
+
+@media screen and (max-width: 426px) {
+
+
+    .kea_logo {
+
+    position: absolute;
+    background-size: 100%;
+    left: 22vw;
+    top: -5vw;
+    z-index: 3;
+
+}
+}
+
+
+
+
+/* ------------------------ UGESOVERSIGT ------------------------------ */
+
+.uge_oversigt {
+    width: 90vw;
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+    margin-left: 5vw;
+}
+
+.uge_oversigt ul {
+    padding: 0;
+}
+
+ul .uge_overskrift {
+    color: black;
+    text-transform: uppercase;
+    transform: scale(0.7);
+    padding-bottom: 1.1vw;
+
+}
+
+.uge_oversigt li {
+    color: black;
+    font-size: 4.25vw;
+    text-transform: uppercase;
+    font-family: arial;
+    letter-spacing: 3px;
+
+    list-style: none;
+}
+
+
+.uge_oversigt .prev {
+    float: left;
+    margin-top: 4vw;
+
+}
+
+.uge_oversigt .next {
+    float: right;
+    margin-top: 4vw;
+
+}
+
+.weekdays1 {
+    padding: 5px 15px;
+}
+
+.weekdays1 li {
+    display: inline-block;
+    width: 5vw;
+    color: #666;
+    text-align: center;
+    border-bottom: 0.1vw solid black;
+    padding: 1vw;
+    margin: 2vw;
+    margin-top: -10vw;
+
+}
+
+.weekdays1 li:first-child {
+    border: 0.1vw solid red;
+
+}
+
+.weekdays1 li:hover {
+    border-bottom: none;
+    border: 0.1vw solid red;
+    cursor: pointer;
+
+}
+
+
+/* ------------------------ DAGSOVERSIGT ------------------------------ */
+
+.accordion {
+    background-color: black;
+    position: absolute;
+/*    top: 96vw;*/
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    width: 90vw;
+    height: 10vw;
+    margin: 5vw;
+}
+
+.dangensskema {
+    background-color: black;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    width: 90vw;
+    height: 35vh;
+    margin: 5vw;
+    margin-bottom: 3.5vw;
+}
+
+
+
+
+.arrowdown {
+    padding-left: 34.5vw;
+}
+
+
+.arrowdown_feed {
+    padding-left: 34.5vw;
+}
+
+.arrowdown_ned {
+    transform: rotate(180deg);
+    transform-origin: center center;
+}
+
+.chat_home
+
+
+.arrowup {
+    padding-left: 31vw;
+
+}
+
+.arrowdown_up {
+    position: absolute;
+    top: 130vw;
+
+
+
+}
+
+
+.panel1 {
+    background-color: black;
+    width: 80vw;
+
+}
+
+.hide {
+    display: none;
+}
+
+.accordion_feed {
+    background-color: #EA5045;
+    position: relative;
+/*    top: 18vw;*/
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    width: 90vw;
+    height: 10vw;
+    }
+
+
+.panel2 {
+    background-color: #EA5045;
+    position: absolute;
+    padding: 5vw;
+    width: 80vw;
+    font-size: 12px;
+}
+
+.panel2 p {
+    margin-left: -2.1vw;
+}
+
+
+.timefortime_bg_udvid {
+    background: rgba(255, 255, 255, 0.25);
+    width: 80vw;
+/*    height: 54.50vw;*/
+    padding: 1vw;
+    margin: 2.5vw;
+    border-radius: 8px;
+color: white;
+    font-family: arial;
+}
+
+.timefortime_panel{
+    position: absolute;
+    top:86.25VW;
+    right: 30VW;
+    width:  60VW;
+    height: 42.5VW;
+}
+
+.timefortime_udvid {
+    justify-content: space-between;
+    width: 60vw;
+    height: 10vw;
+    display: flex;
+    margin-left: 1vw;
+    margin-top: -1vw;
+    font-size: 3.75VW;
+    margin-top: 3.2vw;
+    color: white;
+    font-family: arial;
+}
+
+
+.timefortime_bg {
+    background: rgba(255, 255, 255, 0.25);
+    width: 80vw;
+    height: 10vw;
+    padding: 1vw;
+    margin: 2.5vw;
+    border-radius: 8px;
+color: white;
+    font-family: arial;
+}
+
+.timefortime {
+    justify-content: space-between;
+    width: 60vw;
+    height: 10vw;
+    display: flex;
+    margin-left: 1vw;
+    margin-top: -1vw;
+    font-size: 3.75VW;
+    margin-top: 3.2vw;
+    color: white;
+    font-family: arial;
+}
+
+.evaluering_bg {
+
+    background: rgba(255, 255, 255, 0.25);
+    width: 80vw;
+    height: 10vw;
+    padding: 1vw;
+    margin-bottom: 2.5vw;
+    border-radius: 8px;
+margin-left: 3vw;
+    color: white;
+    font-family: arial;
+
+}
+
+.timefortime_evaluering {
+    justify-content: space-between;
+    width: 53.4vw;
+    height: 10vw;
+    display: flex;
+    margin-left: 1vw;
+    margin-top: -1vw;
+    font-size: 3.75VW;
+    margin-top: 3.2vw;
+    color: white;
+    font-family: arial;
+
+}
+
+.intro_bg {
+    background: rgba(255, 255, 255, 0.25);
+    width: 80vw;
+    height: 10vw;
+    padding: 1vw;
+    border-radius: 8px;
+    margin-bottom: 2.5vw;
+    margin-left: 3vw;
+    color: white;
+    font-family: arial;
+}
+
+.timefortime_intro {
+    justify-content: space-between;
+    width: 60vw;
+    height: 10vw;
+    display: flex;
+    margin-left: 1vw;
+    margin-top: -1vw;
+    font-size: 3.75VW;
+    margin-top: 3.2vw;
+    color: white;
+    font-family: arial;
+
+}
+
+.brugertest_bg {
+
+    background: rgba(255, 255, 255, 0.25);
+    width: 80vw;
+    height: 10vw;
+    padding: 1vw;
+    margin-bottom: 2.5vw;
+    border-radius: 8px;
+    margin-left: 3vw;
+    color: white;
+    font-family: arial;
+
+}
+
+.timefortime_brugertest {
+    justify-content: space-between;
+    width: 55vw;
+    height: 10vw;
+    display: flex;
+    margin-left: 1vw;
+    margin-top: -1vw;
+    font-size: 3.75VW;
+    margin-top: 3.2vw;
+    color: white;
+    font-family: arial;
+}
+
+.groupwork_gb {
+
+    background: rgba(255, 255, 255, 0.4);
+    width: 80vw;
+    height: 10vw;
+    padding: 1vw;
+    margin-left: 3vw;
+    border-radius: 8px;
+    margin-bottom: 2.5vw;
+    color: white;
+    font-family: arial;
+
+}
+
+.timefortime_groupwork {
+    justify-content: space-between;
+    width: 62.4vw;
+    height: 10vw;
+    display: flex;
+    margin-left: 1vw;
+    margin-top: -1vw;
+    font-size: 3.75VW;
+    margin-top: 3.2vw;
+    color: white;
+    font-family: arial;
+}
+
+.aflvereringsboks {
+    background: rgba(255, 255, 255, 0.65);
+    width: 80vw;
+    height: 10vw;
+    padding: 1vw;
+    margin-left: 3vw;
+    border-radius: 8px;
+    margin-bottom: 2.5vw;
+    color: white;
+    font-family: arial;
+
+}
+
+.timefortime_afleveringsboks {
+    justify-content: space-between;
+    width: 62.4vw;
+    height: 10vw;
+    display: flex;
+    margin-left: 1vw;
+    margin-top: -1vw;
+    font-size: 3.75VW;
+    margin-top: 3.2vw;
+    font-family: arial;
+}
+
+.dagens_dokumenter {
+    background: rgba(162, 156, 156, 0.56);
+    width: 80vw;
+    height: 33vw;
+    padding: 1vw;
+    margin-left: 3vw;
+    border-radius: 8px;
+    margin-bottom: 2.5vw;
+    font-family: arial;
+    color: white;
+    font-family: arial;
+
+}
+
+.timefortime_dagensdokumenter {
+
+    width: 62.4vw;
+    height: 30vw;
+    margin-left: 1vw;
+    margin-top: -1vw;
+    font-size: 3.75VW;
+    margin-top: 3.2vw;
+    color: white;
+    font-family: arial;
+}
+
+.dagens_dokumenter a {
+
+    color: #2478cc;
+}
+
+.dagensdato {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -2vw;
+
+}
+
+.dagensdato_right {
+
+    width: 10vw;
+    height: 19vw;
+    flex-wrap: wrap;
+    flex-grow: 5;
+    padding-left: 3vw;
+    margin-top: 2vw;
+    margin: 2vw;
+    font-size: 4VW;
+    padding-top: 3.75VW;
+    margin-top: 5vw;
+    color: white;
+    font-family: arial;
+
+}
+
+.dagensdato_left {
+
+    width: 10vw;
+    height: 16vw;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border-right: 0.1vw solid white;
+    margin-top: 5vw;
+    text-align-last: center;
+    padding: 2vw;
+    padding-top: 4vw;
+    line-height: 8.75VW;
+    color: white;
+    font-family: arial;
+}
+
+.feed {
+    background-color: #EA5045;
+    width: 90vw;
+/*    height: 36vw;*/
+    margin: 5vw;
+    margin-top: 2vw;
+    padding-top: 0.4vw;
+
+}
+
+.feed_overskrift {
+    margin: 2vw;
+    border-bottom: 0.1vw solid white;
+    padding: 1vw;
+
+
+}
+
+.feed_text {
+    margin: 2vw;
+    margin-top: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 12px;
+}
+
+.chat_home {
+
+    background-color: darkgray;
+    width: 90vw;
+    height: 20vw;
+    margin: 5vw;
+    margin-top: -2vw;
+    ´
+}
+
+
+.overskrifter {
+    margin: 2vw;
+    margin-top: 2vw;
+
+}
+
+.afleveringer {
+
+    background-color: darkgray;
+    width: 90vw;
+    height: 20vw;
+    margin: 5vw;
+    margin-top: -2vw;
+
+}
+
+/* ------------------------ SKEMA ------------------------------ */
+
+
+
+.month1 {
+
+    text-align: center;
+    background-color: #2f2d2d;
+    padding-top: 2vw;
+    padding-bottom: 7vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height: 3vw;
+
+
+}
+
+
+
+.month1 ul {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.month1 ul li {
+    color: white;
+    font-size: 7vw;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    font-family: arial;
+
+
+
+}
+
+.month1 .prev {
+    float: left;
+
+}
+
+.month1 .next {
+    float: right;
+
+
+}
+
+.daysandweeks {
+
+    display: flex;
+    margin-left: -1.7vw;
+    padding: 2vw;
+
+}
+
+.weekdays {
+    margin: 0;
+    background-color: darkgrey;
+    height: 6vw;
+    padding-top: 1vw;
+
+
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 10%;
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: 15px;
+    margin-left: 2.25vw;
+    padding-left: 0.2vw;
+    ;
+
+}
+
+.weeks {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    list-style: none;
+    background-color: white;
+    margin-left: -5vw;
+    padding-right: 5vw;
+    border-right: 0.1vw solid grey;
+    margin-top: 1.7vw;
+
+
+
+}
+
+.weeks li {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 5.2vw;
+    font-size: 3.5vw;
+    color: red;
+    font-family: arial;
+
+}
+
+.days {
+    padding: 1vw 0;
+    background: #ffffff;
+    margin: 0;
+    font-family: arial;
+    font-weight: 800;
+
+
+
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 11.5%;
+    text-align: center;
+    margin-bottom: 4vw;
+    font-size: 3.5vw;
+    color: #777;
+    padding: 0.6vw;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white;
+}
+
+.skema {
+
+    background-color: black;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 3.75vw;
+    transition: 0.4s;
+    width: 90vw;
+    height: 185vw;
+    margin: 5vw;
+    padding-left: 2vw;
+
+}
+
+.opacity_50 {
+    opacity: 0.5;
+}
+
+
+.time_et {
+
+    margin-bottom: 3.5vw;
+    border-bottom: 0.1vw solid white;
+    width: 80vw;
+    height: 2vw;
+    margin-left: 4vw;
+
+}
+
+
+/*Afleveringer*/
+
+/*______________________________AFLEVERING______________________*/
+
+
+#lever_opgave p,
+#lever_opgave h3,
+#tidligere_afleveringer p,
+#tidligere_afleveringer h3 {
+	color: white;
+	font-family: arial, sans-serif;
+	font-size: 12px;
+}
+
+
+/*______________________________lever opgave______________________*/
+
+.dangensafleveringer {
+    background-color: #EA5045;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    width: 90vw;
+    height: 24vh;
+    margin: 5vw;
+    margin-bottom: 3.5vw;
+}
+
+
+.dagensafl {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -2vw;
+
+}
+
+.dagensafl_right {
+
+    width: 10vw;
+    height: 19vw;
+    flex-wrap: wrap;
+    flex-grow: 5;
+    padding-left: 3vw;
+    margin-top: 2vw;
+    margin: 2vw;
+    font-size: 4VW;
+    padding-top: 3.75VW;
+    margin-top: 5vw;
+    color: white;
+    font-family: arial;
+
+}
+
+.dagensafl_left {
+
+    width: 10vw;
+    height: 16vw;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border-right: 0.1vw solid white;
+    margin-top: 5vw;
+    text-align-last: center;
+    padding: 2vw;
+    padding-top: 4vw;
+    line-height: 8.75VW;
+    color: white;
+    font-family: arial;
+}
+
+
+
+
+/*______________________________tidligere afleveringer______________________*/
+.tidligere_afleveringer {
+	background-color: black;
+	height: 47vh;
+    width: 90vw;
+    margin: 5vw;
+}
+
+.tidligere_afleveringer h3 {
+	font-size: 5vw;
+	padding-top: 4vw;
+    padding-bottom: 3vw;
+	padding-left: 3vw;
+    margin: 2vw;
+	border-bottom: .01vw solid white;
+    font-family: arial;
+    margin-bottom: 4vw;
+
+}
+
+.animation img {
+    width: 5vw;
+    height: 5vw;
+}
+
+.webside img {
+    width: 5vw;
+    height: 5vw;
+}
+
+.ditspil img {
+    width: 5vw;
+    height: 5vw;
+}
+
+.jannickspil img {
+    width: 5vw;
+    height: 5vw;
+}
+
+.redesign img {
+    width: 5vw;
+    height: 5vw;
+}
+
+
+.webside {
+    width: 68vw;
+    margin-left: 5vw;
+}
+
+.redesign {
+    width: 68vw;
+    margin-left: 5vw;
+}
+
+.animation {
+    margin-left: 5vw;
+    width: 68vw;
+}
+
+.ditspil {
+    margin-left: 5vw;
+    width: 68vw;
+}
+
+.jannickspil {
+    margin-left: 5vw;
+    width: 68vw;
+}
+
+.dagensaflh3 {
+    font-size: 3vw;
+	padding-top: 4vw;
+    padding-bottom: 3vw;
+	padding-left: 3vw;
+    font-family: arial;
+    color: white
+}
+/*------------------------------- aflevering slutt-------------------------*/
+
+
+/* ------------------------ KONTAKT ------------------------------ */
+
+
+
+
+.mindre_overskrifter {
+    color: #EA5045;
+    font-size: 12px;
+    text-transform: full-width;
+    font-family: arial;
+    letter-spacing: 1px;
+    list-style: none;
+}
+
+
+
+/* -------------------------------- */
+
+
+.kontakt_aabningstider {
+
+    background-color: black;
+    width: 90vw;
+    height: 235vw;
+    margin: 5vw;
+    padding-bottom: 10vw;
+    color: white;
+    font-family: arial;
+}
+
+.kontakt_aabningstider_overskrift {
+    margin: 3vw;
+    margin-top: 2vw;
+    border-bottom: 0.1vw solid white;
+    padding: 3vw;
+    color: white;
+    font-family: arial;
+
+}
+
+.kontakt_aabningstider_text {
+    margin: 3vw;
+    margin-top: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 3.75VW;
+    line-height: 5.25VW;
+    color: white;
+    font-family: arial;
+}
+
+/* -------------------------------- */
+
+.fejl_og_mangler {
+
+    background-color: #EA5045;
+    width: 90vw;
+    height: 80vw;
+    margin: 5vw;
+    margin-top: 2vw;
+    color: white;
+    font-family: arial;
+
+}
+
+.f_o_m_overskrift {
+    margin: 3vw;
+    margin-top: 2vw;
+    border-bottom: 0.1vw solid white;
+    padding: 3vw;
+    color: white;
+    font-family: arial;
+
+
+
+}
+
+.f_o_m_text {
+    margin: 3vw;
+    margin-top: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 3.5VW;
+    line-height: 5.2vw;
+    color: white;
+    font-family: arial;
+}
+
+
+/* -------------------------------- */
+
+.kontakt_dsr {
+
+    background-color: #3F3140;
+    width: 90vw;
+    height: 90vw;
+    margin: 5vw;
+    margin-top: -2vw;
+    color: white;
+    font-family: arial;
+
+
+}
+
+
+.kontakt_dsr_overskrift {
+    margin: 3vw;
+    margin-top: 2vw;
+    border-bottom: 0.1vw solid white;
+    padding: 3vw;
+    color: white;
+    font-family: arial;
+
+}
+
+
+.kontakt_dsr_text {
+    margin: 3vw;
+    margin-top: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 3vw;
+    line-height: 5vw;
+    color: white;
+    font-family: arial;
+}
+
+/* -------------------------------- */
+
+
+.kontakt_studie_overskrift {
+    margin: 3vw;
+    margin-top: 2vw;
+    border-bottom: 0.1vw solid white;
+    padding: 3vw;
+    font-size: 3.3vw;
+    color: white;
+    font-family: arial;
+
+}
+
+.kontakt_studie {
+
+    background-color: black;
+    width: 90vw;
+    height: 206vw;
+    margin: 5vw;
+    margin-top: 2vw;
+    color: white;
+    font-family: arial;
+}
+
+.kontakt_studie_text {
+    margin: 3vw;
+    margin-top: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 3.5vw;
+    line-height: 5.2vw;
+    color: white;
+    font-family: arial;
+}
+
+/* ----------------------------------------------------------- */
+
+
+
